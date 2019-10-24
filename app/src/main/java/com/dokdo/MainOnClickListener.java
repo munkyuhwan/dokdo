@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import com.BulletinBoard.BulletinBoard;
 import com.DetailView.DetailView;
 import com.MyAccountInfo.MyAccountInfo;
+import com.MyCashList.MyCashList;
 import com.MyCashback.MyCashback;
 import com.MyUtilities.VolleyRequestAsync;
 import com.SafetyManual.SafetyManual;
@@ -146,6 +147,12 @@ public class MainOnClickListener implements NavigationView.OnNavigationItemSelec
                 intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 this.mActivity.startActivity(intent);
                 break;
+            case R.id.category_2_item_3:
+                intent = new Intent(this.mActivity, MyCashList.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                this.mActivity.startActivity(intent);
+                break;
+
 
             default:
                 break;

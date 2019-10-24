@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.MyCashback.MyCashback"></activity>
+        <activity android:name="com.MyCashList.MyCashList"></activity>
+        <activity android:name="com.MyCashback.MyCashback" />
         <activity android:name="com.MyAccountInfo.MyAccountInfo" />
         <activity android:name="com.BulletinBoard.BulletinDetailView" />
         <activity android:name="com.SafetyManual.SafetyDetail" />

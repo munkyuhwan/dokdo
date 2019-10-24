@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.MyUtilities.MyHttpRequest.EndPoints;
@@ -93,6 +94,27 @@ public class CustomListAdapter extends BaseAdapter {
             date.setText(listViewItem.getDate().toString());
             bulletinTitle.setText(listViewItem.getTitle().toString());
         }
+        else if (listViewItem.getTag().toString().equals(EndPoints.GET_MYCASH_TAG)) {
+            if (convertView == null) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                convertView = inflater.inflate(R.layout.listview_item_cash, parent, false);
+            }
+
+            TextView orderTime = (TextView)convertView.findViewById(R.id.order_time);
+            TextView cashShopName = (TextView)convertView.findViewById(R.id.cash_shop_name);
+            TextView orderSerialNum = (TextView)convertView.findViewById(R.id.order_serial_num);
+            TextView cashType = (TextView)convertView.findViewById(R.id.cash_type);
+            TextView cashCategory = (TextView)convertView.findViewById(R.id.cash_category);
+            TextView cashAmt = (TextView)convertView.findViewById(R.id.cash_amt);
+
+            orderTime.setText(listViewItem.getCashDate());
+            cashShopName.setText(listViewItem.getCashShopName());
+            orderSerialNum.setText(listViewItem.getCashNumber());
+            cashType.setText(listViewItem.getCashType());
+            cashCategory.setText(listViewItem.getCashTitle());
+            cashAmt.setText(listViewItem.getCashAmt());
+
+        }
 
 
 
@@ -100,9 +122,9 @@ public class CustomListAdapter extends BaseAdapter {
     }
 
     public void addItem(long idx, JSONObject values, String tag) {
+        ListViewItem item = new ListViewItem();
 
         if (tag.equals(EndPoints.ORDER_LIST_TAG) ) {
-            ListViewItem item = new ListViewItem();
             item.setIdx(idx);
             try {
                 item.setTag(tag);
@@ -118,13 +140,11 @@ public class CustomListAdapter extends BaseAdapter {
                 item.setDeliveryFee(values.getString("delivery_fee"));
                 item.setDistance(values.getString("distance"));
                 item.setRequest(values.getString("request"));
-                listViewItemList.add(item);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
         else if (tag.equals(EndPoints.BULLETIN_LIST_TAG)) {
-            ListViewItem item = new ListViewItem();
             item.setIdx(idx);
             try {
                 item.setTag(tag);
@@ -132,13 +152,11 @@ public class CustomListAdapter extends BaseAdapter {
                 item.setTitle(values.getString("title"));
                 item.setContent(values.getString("content"));
                 item.setDate(values.getString("date"));
-                listViewItemList.add(item);
             }catch (Exception e) {
 
             }
         }
         else if (tag.equals(EndPoints.SAFETY_LIST_TAG)) {
-            ListViewItem item = new ListViewItem();
             item.setIdx(idx);
             try {
                 item.setTag(tag);
@@ -146,11 +164,28 @@ public class CustomListAdapter extends BaseAdapter {
                 item.setTitle(values.getString("title"));
                 item.setContent(values.getString("content"));
                 item.setDate(values.getString("date"));
-                listViewItemList.add(item);
             }catch (Exception e) {
 
             }
         }
+        else if (tag.equals(EndPoints.GET_MYCASH_TAG)) {
+
+            try {
+                item.setTag(tag);
+                item.setCashDate(values.getString("cashDate"));
+                item.setCashShopName(values.getString("cashShopName"));
+                item.setCashNumber(values.getString("cashNumber"));
+                item.setCashType(values.getString("cashType"));
+                item.setCashAmt(values.getString("cashAmt"));
+                item.setCashTitle(values.getString("cashTitle"));
+
+            }catch (Exception e) {
+
+            }
+
+        }
+        listViewItemList.add(item);
+
     }
 
 }

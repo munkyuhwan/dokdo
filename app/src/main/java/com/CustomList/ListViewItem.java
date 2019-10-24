@@ -16,7 +16,7 @@ public class ListViewItem {
 
 
 
-
+    //메인 리스
     private long idx;
     private String shopName;
     private String addressFrom;
@@ -130,7 +130,7 @@ public class ListViewItem {
 
 
 
-
+    //공지사항 변
     private String title;
     private String content;
     private String date;
@@ -158,4 +158,54 @@ public class ListViewItem {
     public void setDate(String date) {
         this.date = date;
     }
+
+
+
+    //거래 내역 리스트 변수
+
+
+    private String cashDate;
+    private String cashShopName;
+    private String cashNumber;
+    private String cashType;
+    private String cashAmt;
+    private String cashTitle;
+
+    public String getCashDate() {
+        return cashDate;
+    }
+    public void setCashDate(String cashDate) {
+        this.cashDate = cashDate;
+    }
+    public String getCashShopName() {
+        return cashShopName;
+    }
+    public void setCashShopName(String cashShopName) {
+        this.cashShopName = cashShopName;
+    }
+    public String getCashNumber() {
+        return cashNumber;
+    }
+    public void setCashNumber(String cashNumber) {
+        this.cashNumber = cashNumber;
+    }
+    public String getCashType() {
+        return cashType;
+    }
+    public void setCashType(String cashType) {
+        this.cashType = cashType;
+    }
+    public String getCashAmt() {
+        return cashAmt;
+    }
+    public void setCashAmt(String cashAmt) {
+        this.cashAmt = cashAmt;
+    }
+    public String getCashTitle() {
+        return cashTitle;
+    }
+    public void setCashTitle(String cashTitle) {
+        this.cashTitle = cashTitle;
+    }
+
 }

@@ -9,6 +9,7 @@ import android.widget.TabHost;
 
 import androidx.annotation.NonNull;
 
+import com.AutoCtrlPolicy.AutoCtrlPolicy;
 import com.BulletinBoard.BulletinBoard;
 import com.DetailView.DetailView;
 import com.MyAccountInfo.MyAccountInfo;
@@ -152,7 +153,11 @@ public class MainOnClickListener implements NavigationView.OnNavigationItemSelec
                 intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 this.mActivity.startActivity(intent);
                 break;
-
+            case R.id.category_2_item_4:
+                intent = new Intent(this.mActivity, AutoCtrlPolicy.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                this.mActivity.startActivity(intent);
+                break;
 
             default:
                 break;

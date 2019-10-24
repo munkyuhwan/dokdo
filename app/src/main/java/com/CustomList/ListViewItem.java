@@ -208,4 +208,36 @@ public class ListViewItem {
         this.cashTitle = cashTitle;
     }
 
+
+
+
+    // 자동 조정 책
+
+    private String autoCtrlPolicyTitle;
+    private String autoCtrlPolicyContent;
+    private String autoCtrlPolicyDate;
+
+    public String getAutoCtrlPolicyTitle() {
+        return autoCtrlPolicyTitle;
+    }
+
+    public void setAutoCtrlPolicyTitle(String autoCtrlPolicyTitle) {
+        this.autoCtrlPolicyTitle = autoCtrlPolicyTitle;
+    }
+
+    public String getAutoCtrlPolicyContent() {
+        return autoCtrlPolicyContent;
+    }
+
+    public void setAutoCtrlPolicyContent(String autoCtrlPolicyContent) {
+        this.autoCtrlPolicyContent = autoCtrlPolicyContent;
+    }
+
+    public String getAutoCtrlPolicyDate() {
+        return autoCtrlPolicyDate;
+    }
+
+    public void setAutoCtrlPolicyDate(String autoCtrlPolicyDate) {
+        this.autoCtrlPolicyDate = autoCtrlPolicyDate;
+    }
 }

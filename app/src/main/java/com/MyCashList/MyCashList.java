@@ -31,7 +31,7 @@ public class MyCashList extends AppCompatActivity {
         Log.e("tag", "====prev tabNum: " + VolleyRequestAsync.getInstance().getClassNum() + "================================");
 
         CustomListView listView = new CustomListView(this);
-        listView.init(listId, EndPoints.GET_MYCASH_URL, EndPoints.GET_MYCASH_TAG, DetailView.class, tabNum);
+        listView.init(listId, EndPoints.GET_MYCASH_URL, EndPoints.GET_MYCASH_TAG, null, tabNum);
 
 
 

@@ -84,20 +84,22 @@ public class CustomListView implements MainInterface {
             }
         });
 
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(final AdapterView<?> parent, final View view, final int position, final long id) {
-                mAcitivty.runOnUiThread(new Runnable() {
-                    @Override
+        if (detailView != null) {
+            mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(final AdapterView<?> parent, final View view, final int position, final long id) {
+                    mAcitivty.runOnUiThread(new Runnable() {
+                        @Override
                         public void run() {
-                        Intent intent = new Intent(mAcitivty, detailView);
-                        intent.putExtra("id",String.valueOf(id));
-                        mAcitivty.startActivity(intent);
-                    }
+                            Intent intent = new Intent(mAcitivty, detailView);
+                            intent.putExtra("id", String.valueOf(id));
+                            mAcitivty.startActivity(intent);
+                        }
 
-                });
-            }
-        });
+                    });
+                }
+            });
+        }
 
     }
 

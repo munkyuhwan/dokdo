@@ -115,6 +115,21 @@ public class CustomListAdapter extends BaseAdapter {
             cashAmt.setText(listViewItem.getCashAmt());
 
         }
+        else if(listViewItem.getTag().toString().equals(EndPoints.GET_AUTOPOLICY_TAG)) {
+            if (convertView == null) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                convertView = inflater.inflate(R.layout.listview_item_policy, parent, false);
+            }
+
+            TextView title = (TextView)convertView.findViewById(R.id.policy_title);
+            TextView content = (TextView)convertView.findViewById(R.id.policy_content);
+            TextView policyDate = (TextView)convertView.findViewById(R.id.policy_date);
+
+            title.setText(listViewItem.getAutoCtrlPolicyTitle());
+            content.setText(listViewItem.getAutoCtrlPolicyContent());
+            policyDate.setText(listViewItem.getAutoCtrlPolicyDate());
+
+        }
 
 
 
@@ -184,6 +199,19 @@ public class CustomListAdapter extends BaseAdapter {
             }
 
         }
+        else if (tag.equals(EndPoints.GET_AUTOPOLICY_TAG)) {
+            try {
+                item.setTag(tag);
+                item.setAutoCtrlPolicyTitle(values.getString("title"));
+                item.setAutoCtrlPolicyContent(values.getString("content"));
+                item.setAutoCtrlPolicyDate(values.getString("date"));
+
+            }catch (Exception e) {
+
+            }
+        }
+
+
         listViewItemList.add(item);
 
     }

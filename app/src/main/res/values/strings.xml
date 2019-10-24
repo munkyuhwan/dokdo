@@ -59,4 +59,18 @@
 
     <!-- 거래 내역 -->
     <string name="cashback_str">캐시 거래</string>
+
+    <!-- 정산조회  -->
+    <string name="today">오늘</string>
+    <string name="yesterday">어제</string>
+    <string name="week">일주일</string>
+    <string name="month">한달</string>
+
+    <string name="total_cnt">총 완료 건수</string>
+    <string name="total_commission">총 총 배송수수료</string>
+    <string name="after_commission">후정산</string>
+    <string name="jingsu">원청징수</string>
+
+    <string name="see_balance_deatil">자세히보기</string>
+
 </resources>

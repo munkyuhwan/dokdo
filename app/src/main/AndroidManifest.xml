@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.AutoCtrlPolicy.AutoCtrlPolicy"></activity>
+        <activity android:name="com.CalculateBalance.CalculateBalance"></activity>
+        <activity android:name="com.AutoCtrlPolicy.AutoCtrlPolicy" />
         <activity android:name="com.MyCashList.MyCashList" />
         <activity android:name="com.MyCashback.MyCashback" />
         <activity android:name="com.MyAccountInfo.MyAccountInfo" />

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dokdo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.MyAccountInfo.MyAccountInfo"></activity>
+        <activity android:name="com.BulletinBoard.BulletinDetailView" />
+        <activity android:name="com.SafetyManual.SafetyDetail" />
+        <activity android:name="com.SafetyManual.SafetyManual" />
+        <activity android:name="com.BulletinBoard.BulletinBoard" />
+        <activity
+            android:name="com.CustomLogin.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.DetailView.DetailView" />
+        <activity
+            android:name=".TabViewMain"
+            android:label="@string/title_activity_tab_view_main"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">dokdo</string>
+    <string name="title_activity_tab_view_main">TabViewMain</string>
+    <string name="tab_text_1">관할 공유</string>
+    <string name="tab_text_2">배정 픽업</string>
+    <string name="tab_text_3">완료 취소</string>
+
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <string name="duty">출근</string>
+    <string name="rest">휴식</string>
+    <string name="done">퇴근</string>
+
+    <string name="login_fail">로그인할 수 없습니다.</string>
+
+    <string-array name="planets_array">
+        <item>Mer</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+
+
+    <string name="menu_category_1">안내</string>
+    <string name="menu_category_2">캐시</string>
+    <string name="menu_category_3">관리</string>
+    <string name="menu_category_4">설정</string>
+    <string name="menu_category_5">서비스</string>
+
+    <string name="category_1_item_1">공지사항</string>
+    <string name="category_1_item_2">안전 가이드</string>
+
+    <string name="category_2_item_1">내 계좌 정보</string>
+    <string name="category_2_item_2">거래</string>
+    <string name="category_2_item_3">거래 내역</string>
+    <string name="category_2_item_4">자동조정 정책</string>
+
+    <string name="category_3_item_1">정산 조회</string>
+    <string name="category_3_item_2">활동 조회</string>
+
+    <string name="category_4_item_1">내 정보</string>
+    <string name="category_4_item_2">환경설정</string>
+
+    <string name="category_5_item_1">부릉몰</string>
+
+
+    <string name="gps_enable">GPS를 활성화 해 주세요</string>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior= "single" >
+        <item android:title="@string/menu_category_1">
+            <menu>
+                <item
+                    android:title="@string/category_1_item_1"
+                    android:id="@+id/category_1_item_1"></item>
+                <item
+                    android:title="@string/category_1_item_2"
+                    android:id="@+id/category_1_item_2"></item>
+            </menu>
+        </item>
+
+        <item android:title="@string/menu_category_2">
+            <menu>
+                <item
+                    android:title="@string/category_2_item_1"
+                    android:id="@+id/category_2_item_1"></item>
+                <item
+                    android:title="@string/category_2_item_2"
+                    android:id="@+id/category_2_item_2"></item>
+                <item
+                    android:title="@string/category_2_item_3"
+                    android:id="@+id/category_2_item_3"></item>
+                <item
+                    android:title="@string/category_2_item_4"
+                    android:id="@+id/category_2_item_4"></item>
+            </menu>
+        </item>
+
+        <item android:title="@string/menu_category_3">
+            <menu>
+                <item
+                    android:title="@string/category_3_item_1"
+                    android:id="@+id/category_3_item_1"></item>
+                <item
+                    android:title="@string/category_3_item_2"
+                    android:id="@+id/category_3_item_2"></item>
+            </menu>
+        </item>
+
+        <item android:title="@string/menu_category_4">
+            <menu>
+                <item
+                    android:title="@string/category_4_item_1"
+                    android:id="@+id/category_4_item_1"></item>
+                <item
+                    android:title="@string/category_4_item_2"
+                    android:id="@+id/category_4_item_2"></item>
+            </menu>
+        </item>
+
+        <item android:title="@string/menu_category_5">
+            <menu>
+                <item
+                    android:title="@string/category_5_item_1"
+                    android:id="@+id/category_5_item_1"></item>
+            </menu>
+        </item>
+
+    </group>
+</menu>

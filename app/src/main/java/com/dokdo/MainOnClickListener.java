@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import com.BulletinBoard.BulletinBoard;
 import com.DetailView.DetailView;
 import com.MyAccountInfo.MyAccountInfo;
+import com.MyCashback.MyCashback;
 import com.MyUtilities.VolleyRequestAsync;
 import com.SafetyManual.SafetyManual;
 import com.google.android.material.navigation.NavigationView;
@@ -113,7 +114,8 @@ public class MainOnClickListener implements NavigationView.OnNavigationItemSelec
     protected MainOnClickListener(NavigationView naviMenu, TabViewMain activity) {
         this.mNaviMenu = naviMenu;
         this.mActivity = activity;
-}
+    }
+
     protected MainOnClickListener registerNaviMenu() {
         this.mNaviMenu.setNavigationItemSelectedListener(this);
         return null;
@@ -136,6 +138,11 @@ public class MainOnClickListener implements NavigationView.OnNavigationItemSelec
                 break;
             case R.id.category_2_item_1:
                 intent = new Intent(this.mActivity, MyAccountInfo.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                this.mActivity.startActivity(intent);
+                break;
+            case R.id.category_2_item_2:
+                intent = new Intent(this.mActivity, MyCashback.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 this.mActivity.startActivity(intent);
                 break;

@@ -47,5 +47,14 @@
 
     <string name="gps_enable">GPS를 활성화 해 주세요</string>
 
+    <!-- 거래 내역 -->
+    <string name="mcash_title">보유 M캐시</string>
+    <string name="my_refund">내 계좌 환급</string>
+    <string name="transfer">지점 전송</string>
+    <string name="bank_account">환급 계좌</string>
+    <string name="request_amt">신청 금액</string>
+    <string name="commision">수수료</string>
+    <string name="reduct_mcash">차감 M캐시</string>
+    <string name="button_request">신청하기</string>
 
 </resources>

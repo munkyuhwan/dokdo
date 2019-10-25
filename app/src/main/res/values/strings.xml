@@ -73,4 +73,23 @@
 
     <string name="see_balance_deatil">자세히보기</string>
 
+
+    <!-- 활동조회 -->
+    <string name="search_date">조회일</string>
+    <string name="change_date">조회 일자 변경</string>
+    <string name="order_complete_cnt">오더 완료 건수</string>
+    <string name="pickup_request_over_cnt">픽업요청 초과 오더 수행 건수</string>
+    <string name="pickup_avg_time">배정 후 픽업 평균 시간</string>
+    <string name="pickup_to_complete_avg">픽업 후 완료 평균 시간</string>
+    <string name="order_avg_distance">오더 평균 거리</string>
+    <string name="order_acc_distance">오더 누적 거리</string>
+    <string name="pickup_request_comple">픽업요청시간달성</string>
+    <string name="pickup_20min_comple">접수 후 픽업 20분 달성</string>
+    <string name="pickup_40min_comple">접수 후 완료 40분 달성</string>
+    <string name="no_dat">전월 데이터 없음</string>
+    <string name="complete_rate">달성률</string>
+
+
+
+
 </resources>

@@ -9,6 +9,7 @@ import android.widget.TabHost;
 
 import androidx.annotation.NonNull;
 
+import com.ActivityList.ActivityListMain;
 import com.AutoCtrlPolicy.AutoCtrlPolicy;
 import com.BulletinBoard.BulletinBoard;
 import com.CalculateBalance.CalculateBalance;
@@ -161,6 +162,11 @@ public class MainOnClickListener implements NavigationView.OnNavigationItemSelec
                 break;
             case R.id.category_3_item_1:
                 intent = new Intent(this.mActivity, CalculateBalance.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                this.mActivity.startActivity(intent);
+                break;
+            case R.id.category_3_item_2:
+                intent = new Intent(this.mActivity, ActivityListMain.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                 this.mActivity.startActivity(intent);
                 break;
